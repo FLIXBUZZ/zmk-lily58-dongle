@@ -1,15 +1,314 @@
-layout: {qmk_keyboard: lily58_rotated}
+layout: {zmk_keyboard: lily58}
 layers:
-  Bas: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '`', ↹, Q, W, E, R, T, Y, U, I, O, P, '-', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K,
-    L, ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, '[', ']', N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$',
-    Low, ␣, ⏎, Rai, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-command$$']
-  Low:
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
+  default:
+  - Esc
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: qwerty, h: toggle}
+  - ↹
+  - Z
+  - Y
+  - U
+  - A
+  - Q
+  - P
+  - B
+  - M
+  - L
+  - F
+  - J
+  - $$mdi:apple-keyboard-control$$
+  - C
+  - S
+  - I
+  - E
+  - O
+  - D
+  - T
+  - N
+  - R
+  - H
+  - '&de_eszett'
+  - $$mdi:apple-keyboard-shift$$
+  - V
+  - X
+  - '&de_ue'
+  - '&de_ae'
+  - '&de_oe'
+  - F23
+  - F24
+  - W
+  - G
+  - ','
+  - .
+  - K
+  - $$mdi:apple-keyboard-shift$$
+  - PLAY PAUSE
+  - $$mdi:apple-keyboard-option$$
+  - s_char
+  - ␣
+  - BACKSPACE
+  - ENTER
+  - $$mdi:apple-keyboard-command$$
+  - NEXT
+  s_char:
+  - Win Close
+  - Sft+Ctl+T
+  - Ctl+W
+  - Sft+Ctl+↹
+  - Ctl+↹
+  - Ctl+T
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ↹
+  - Ctl+Sft+T
+  - Ctl+W
+  - Tab Left
+  - Tab Right
+  - Ctl+T
+  - Page Up
+  - Ctl+←
+  - Ctl+1
+  - Ctl+J
+  - Ctl+→
+  - Home
+  - $$mdi:apple-keyboard-control$$
+  - fn
+  - num
+  - brackets
+  - stzch
+  - ''
+  - Page Down
+  - ←
+  - ↑
+  - ↓
+  - →
+  - End
+  - $$mdi:apple-keyboard-shift$$
+  - ←
+  - ↑
+  - ↓
+  - →
+  - ''
+  - F23
+  - F24
+  - ''
+  - '-'
+  - ;
+  - ':'
+  - _
+  - Esc
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ␣
+  - DELETE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PREVIOUS
+  stzch:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '!'
+  - ''''
+  - +
+  - '='
+  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '?'
+  - '"'
+  - '#'
+  - '*'
+  - ^
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '@'
+  - AMPERSAND
+  - $
+  - '%'
+  - $
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - $$mdi:backspace-outline$$
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  brackets:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - <
+  - '>'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - (
+  - )
+  - '{'
+  - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - /
+  - \
+  - '|'
+  - '~'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - $$mdi:backspace-outline$$
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  num:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CALCULATOR
+  - '='
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - +
+  - '7'
+  - '8'
+  - '9'
+  - '*'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - KP DIVIDE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - .
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - ','
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - $$mdi:backspace-outline$$
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  fn:
+  - {t: ▽, type: trans}
+  - bt
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -20,40 +319,6 @@ layers:
   - F2
   - F3
   - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - '`'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - AMPS
-  - KP MULTIPLY
-  - (
-  - )
-  - '~'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - KP PLUS
-  - '{'
-  - '}'
-  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -62,7 +327,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Rai:
+  - F5
+  - F6
+  - F7
+  - F8
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -73,9 +341,80 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - F9
+  - F10
+  - F11
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '`'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  bt:
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR ALL
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 1
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 2
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 3
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&soft_off'
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 4
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  qwerty:
+  - Esc
   - '1'
   - '2'
   - '3'
@@ -87,37 +426,49 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - {t: ▽, type: trans}
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ENTER
+  - LEFT CONTROL
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
   - ←
-  - ↓
-  - ↑
   - →
-  - {t: ▽, type: trans}
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - KP PLUS
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - Y
+  - X
+  - C
+  - V
+  - B
+  - F23
+  - F24
+  - N
+  - M
+  - ','
+  - .
+  - ↑
+  - ↓
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
